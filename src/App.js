@@ -4,13 +4,6 @@ import { nanoid } from "nanoid";
 import Todo from "./components/Todo";
 import Form from "./components/Form";
 
-function usePrevious(value) {
-  const ref = useRef();
-  useEffect(() => {
-    ref.current = value;
-  });
-  return ref.current;
-}
 const FILTER_MAP = {
   All: () => true,
   Active: (task) => !task.completed,
