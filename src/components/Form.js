@@ -9,9 +9,8 @@ function Form() {
   const dispatch = useDispatch()
 
   const handleSubmit = (e) => {
-    if (!title) return
     e.preventDefault()
-
+    if (title === '') return
     dispatch(addTodo({ id: nanoid(), title, completed: false }))
     setTitle('')
   }
