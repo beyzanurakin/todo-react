@@ -1,5 +1,5 @@
 
-# Photo Editor 
+# TODO APP
 
 Todo Application built with Redux-Toolkit(RTK)
 ## Screenshots
